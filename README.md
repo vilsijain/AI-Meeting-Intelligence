@@ -1,6 +1,6 @@
 # AI Meeting Intelligence Platform
 
-A minimal end-to-end web app that extracts actionable insights from meeting recordings. Users can upload audio/video files and receive structured information about action items, decisions, and participant interactions.
+AI Meeting Intelligence Platform end-to-end web app that extracts  insights from meeting recordings. Users can upload audio/video files and receive information about action items, decisions, and participant interactions.
 
 ## Tech Stack
 - **Frontend:** React (Vite) + Tailwind CSS
@@ -136,4 +136,4 @@ AI Pipeline Tests: Transcription and analysis accuracy
 
 ## Docker
 
-You can add Docker later. This starter keeps things simple for fast iteration.
+Run your project using docker
