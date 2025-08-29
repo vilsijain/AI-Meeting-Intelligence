@@ -17,14 +17,14 @@ A minimal end-to-end web app that extracts actionable insights from meeting reco
 
 ## Quick Start
 
-### 0) Prereqs
+### 1) Prereqs
 - Python 3.10+
 - Node 18+
 - (Optional) Whisper.cpp binary installed locally (`main`) and a GGML model (e.g., `ggml-base.en.bin`)
 - (Optional) Ollama installed and running: https://ollama.com/ (default host: `http://localhost:11434`)
 - The code uses ChromaDB in local persistent mode (stores under `./backend/chroma_store`).
 
-### 1) Backend
+### 2) Backend
 ```bash
 cd backend
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -37,14 +37,14 @@ cp .env.example .env   # then edit paths if needed
 uvicorn app:app --reload --port 8000
 ```
 
-### 2) Frontend
+### 3) Frontend
 ```bash
 cd ../frontend
 npm install
 npm run dev  # starts Vite dev server, usually on http://localhost:5173
 ```
 
-### 3) Try it
+### 4) 
 - Open the frontend URL, upload an audio/video file.
 - Or use curl to test:
 ```bash
