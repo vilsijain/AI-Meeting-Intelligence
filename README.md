@@ -8,7 +8,7 @@ A minimal end-to-end web app that extracts actionable insights from meeting reco
 - **Database:** SQLite (via SQLModel)
 - **AI Components:**
   - **Whisper.cpp** for transcription (CLI)
-  - **Ollama** for LLM (e.g., `llama3`, `mistral`)
+  - **Ollama** for LLM 
   - **ChromaDB** for vector search
 
 > This starter works out of the box for the app skeleton and API. Transcription and LLM calls expect local services (Whisper.cpp, Ollama) to be installed and running. The code includes graceful fallbacks for when those services are unavailable so you can still demo the UI/API.
