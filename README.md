@@ -126,7 +126,14 @@ ai-meeting-intel/
 ```
 
 ---
+# Testing Approach
 
-## (Optional) Docker
+Unit Tests: Individual function and component testing
+Integration Tests: API endpoint and database interaction
+E2E Tests: Full user workflow testing (Cypress)
+Performance Tests: Load testing with large files
+AI Pipeline Tests: Transcription and analysis accuracy
+
+## Docker
 
 You can add Docker later. This starter keeps things simple for fast iteration.
