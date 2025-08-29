@@ -11,8 +11,6 @@ AI Meeting Intelligence Platform end-to-end web app that extracts  insights from
   - **Ollama** for LLM 
   - **ChromaDB** for vector search
 
-> This starter works out of the box for the app skeleton and API. Transcription and LLM calls expect local services (Whisper.cpp, Ollama) to be installed and running. The code includes graceful fallbacks for when those services are unavailable so you can still demo the UI/API.
-
 ---
 
 ## Quick Start
@@ -20,18 +18,16 @@ AI Meeting Intelligence Platform end-to-end web app that extracts  insights from
 ### 1) Prereqs
 - Python 3.10+
 - Node 18+
-- (Optional) Whisper.cpp binary installed locally (`main`) and a GGML model (e.g., `ggml-base.en.bin`)
-- (Optional) Ollama installed and running: https://ollama.com/ (default host: `http://localhost:11434`)
+- Whisper.cpp binary installed locally (`main`) and a GGML model 
+- Ollama installed and running: https://ollama.com/default host
 - The code uses ChromaDB in local persistent mode (stores under `./backend/chroma_store`).
 
 ### 2) Backend
 ```bash
 cd backend
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m venv .venv 
+source .venv/bin/activate # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
-# (optional) set env vars
-cp .env.example .env   # then edit paths if needed
 
 # run API
 uvicorn app:app --reload --port 8000
@@ -130,9 +126,7 @@ ai-meeting-intel/
 
 Unit Tests: Individual function and component testing
 Integration Tests: API endpoint and database interaction
-E2E Tests: Full user workflow testing (Cypress)
 Performance Tests: Load testing with large files
-AI Pipeline Tests: Transcription and analysis accuracy
 
 ## Docker
 
